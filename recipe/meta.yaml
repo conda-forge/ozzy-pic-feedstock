@@ -43,7 +43,7 @@ requirements:
 
 test:
   imports:
-    - ozzy_pic
+    - ozzy-pic
   commands:
     - pip check
   requires:
