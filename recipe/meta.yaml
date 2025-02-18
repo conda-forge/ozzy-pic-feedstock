@@ -43,7 +43,8 @@ requirements:
 
 test:
   imports:
-    - ozzy-pic
+    - ozzy
+    - ozzy.plot
   commands:
     - pip check
   requires:
