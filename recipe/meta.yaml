@@ -37,10 +37,10 @@ requirements:
     - ipykernel >=6.29.5,<7.0.0
     - hvplot >=0.11.1,<0.12.0
     - jupyter_bokeh >=4.0.5,<5.0.0
-    - numpy-groupies >=0.11.3,<0.12.0
     - numbagg >=0.9.0,<0.10.0
     - pyarrow >=20.0.0,<21.0.0
   run_constrained:
+    - numpy-groupies >=0.11.3,<0.12.0
 
 test:
   imports:
