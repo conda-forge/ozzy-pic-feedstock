@@ -34,10 +34,9 @@ requirements:
     - cmcrameri
     - seaborn >=0.13.2,<0.14.0
     - numbagg >=0.9.0,<0.10.0
-    - numpy-groupies >=0.11.3,<0.12.0
     - pyarrow >=20.0.0,<21.0.0
   run_constrained:
-
+    - numpy-groupies >=0.11.3,<0.12.0
 
 test:
   imports:
