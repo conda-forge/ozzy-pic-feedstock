@@ -1,5 +1,5 @@
 {% set name = "ozzy-pic" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.4" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ozzy_pic-{{ version }}.tar.gz
-  sha256: 47c3cf6684f23d81e8b06e8bb8e83f79446386ccc3f02945a6dbccabccbd74e2
+  sha256: 64e3c7632159fbaaad7a231d930ef2939c0afb9e534fca90b84841fd0aec4071
 
 build:
   noarch: python
@@ -21,10 +21,10 @@ requirements:
     - poetry-core
     - pip
   run:
-    - python >={{ python_min }}
+    - python >={{ python_min }},<3.14
     - xarray >=2025.6.1,<2026.0.0
     - tqdm >=4.67.1,<5.0.0
-    - numba >=0.61.2,<0.62.0
+    - numba >=0.62,<1.0
     - h5py >=3.14.0,<4.0.0
     - h5netcdf >=1.6.1,<2.0.0
     - flox >=0.10.4,<0.11.0
@@ -33,14 +33,11 @@ requirements:
     - matplotlib-base >=3.10.3,<4.0.0
     - cmcrameri
     - seaborn >=0.13.2,<0.14.0
-    - ipython >=8.28.0,<9.0.0
-    - ipykernel >=6.29.5,<7.0.0
-    - hvplot >=0.11.1,<0.12.0
-    - jupyter_bokeh >=4.0.5,<5.0.0
     - numbagg >=0.9.0,<0.10.0
+    - numpy-groupies >=0.11.3,<0.12.0
     - pyarrow >=20.0.0,<21.0.0
   run_constrained:
-    - numpy-groupies >=0.11.3,<0.12.0
+
 
 test:
   imports:
