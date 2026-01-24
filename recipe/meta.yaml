@@ -1,5 +1,5 @@
 {% set name = "ozzy-pic" %}
-{% set version = "2.0.4" %}
+{% set version = "2.0.5" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ozzy_pic-{{ version }}.tar.gz
-  sha256: 64e3c7632159fbaaad7a231d930ef2939c0afb9e534fca90b84841fd0aec4071
+  sha256: 5de1652eaf924b8fd71e1d4cc88711f06c512a2469ccbcf497879fe26fe34689
 
 build:
   noarch: python
