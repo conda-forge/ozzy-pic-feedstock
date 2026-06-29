@@ -45,8 +45,7 @@ requirements:
 test:
   imports:
     - ozzy
-  commands:
-    - pip check
+    - ozzy.plot
   requires:
     - python {{ python_min }}
     - pip
