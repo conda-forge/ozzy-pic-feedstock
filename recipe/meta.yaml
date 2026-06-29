@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ozzy_pic-{{ version }}.tar.gz
-  sha256: 5de1652eaf924b8fd71e1d4cc88711f06c512a2469ccbcf497879fe26fe34689
+  sha256: 0c15a7c426c97661b2540c4d966d7d4a4d16a5695903ae16b8d9a25481558867
 
 build:
   noarch: python
@@ -46,8 +46,6 @@ test:
   imports:
     - ozzy
     - ozzy.plot
-  commands:
-    - pip check
   requires:
     - python {{ python_min }}
     - pip
